@@ -1,0 +1,19 @@
+﻿<controls:MetroWindow x:Class="RSSReader.AddDlg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Add a RSS feed" Height="200" Width="400" BorderThickness="2" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <controls:MetroWindow.BorderBrush>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF738CF9" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </controls:MetroWindow.BorderBrush>
+    <Grid>
+        <Button Content="OK" IsDefault="True" HorizontalAlignment="Left" Margin="179,113,0,0" VerticalAlignment="Top" Width="85" Height="30" Click="ok_click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="284,113,0,0" VerticalAlignment="Top" Width="85" Height="30" Click="cancel_click"/>
+        <TextBox Name="rssURL" HorizontalAlignment="Left" Height="23" Margin="26,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343"/>
+        <Label Content="Input the RSS URL here:" HorizontalAlignment="Left" Margin="26,23,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</controls:MetroWindow>

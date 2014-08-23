@@ -1,0 +1,65 @@
+﻿<controls:MetroWindow x:Class="RSSReader.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    Title="RSS READER" Icon="Image/appbar.rss.png" BorderThickness="2" >
+    <controls:MetroWindow.BorderBrush>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF738CF9" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </controls:MetroWindow.BorderBrush>
+    
+    <controls:MetroWindow.Flyouts>
+        <controls:FlyoutsControl>
+            <controls:Flyout Header="Setting" IsModal="True" Position="Right" Width="400" HorizontalAlignment="Right">
+            </controls:Flyout>
+        </controls:FlyoutsControl>
+    </controls:MetroWindow.Flyouts>
+    
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <Button Content="settings" Click="flyoutClick" />
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="178*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="573*"/>
+        </Grid.ColumnDefinitions>
+        <ToolBar Height="43" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="-1,-1,0,0" BorderThickness="0">
+            <ToolBar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDFE8FB" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </ToolBar.Background>
+            <Button VerticalAlignment="Stretch" Width="37" Click="addClick">
+                <Image Source="Image/appbar.add.png" Stretch="Fill"/>
+            </Button>
+            <Button VerticalAlignment="Stretch" Width="37" Click="deleteClick">
+                <Image Source="Image/appbar.minus.png" Stretch="Fill"/>
+            </Button>
+            <Button VerticalAlignment="Stretch" Width="37" Click="refreshClick">
+                <Image Source="Image/appbar.refresh.png" Stretch="Fill"/>
+            </Button>
+            <Button VerticalAlignment="Stretch" Width="37">
+                <Image Source="Image/appbar.page.heart.png" Stretch="Fill"/>
+            </Button>
+            <Button VerticalAlignment="Stretch" Width="37">
+                <Image Source="Image/appbar.home.png" Stretch="Fill"/>
+            </Button>
+        </ToolBar>
+        <TreeView x:Name="rssFeadTree" Margin="-1,0,0,0" Grid.Row="2" SelectedItemChanged="rssFeadSelected"/>
+        <GridSplitter Grid.Row="1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" Grid.Column="1" Grid.RowSpan="2"/>
+        <ListBox x:Name="rssItemList" Grid.Column="2" Grid.Row="2" BorderBrush="Black"/>
+        <Rectangle Fill="#FFF4F4F5" Margin="-1,0,0,0" Grid.Row="1" Stroke="#FFC5B6F7" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</controls:MetroWindow>

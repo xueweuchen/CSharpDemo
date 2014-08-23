@@ -1,0 +1,18 @@
+D:\Project\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+D:\Project\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+D:\Project\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\Simple Styles.baml
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\App.baml
+D:\Project\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+D:\Project\WpfApplication1\WpfApplication1\bin\Debug\System.Windows.Interactivity.dll
+D:\Project\WpfApplication1\WpfApplication1\bin\Debug\MahApps.Metro.dll
+D:\Project\WpfApplication1\WpfApplication1\bin\Debug\MahApps.Metro.xml
